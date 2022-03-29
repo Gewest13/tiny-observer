@@ -32,7 +32,7 @@ yarn:
 observe(
   function // when element is intersecting
   element  // element to observe
-  function // optional: when element isn't intersection
+  function // optional: when element isn't intersecting
   options  // optional: { rootMargin, treshold }
 );
 
