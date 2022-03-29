@@ -2,8 +2,7 @@
 # Tiny Intersection Observer 🔭
 
 Tiny library to observe intersecting elements!
-
-
+Based on: [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
 
 
 ## Features
@@ -30,15 +29,15 @@ yarn:
 
 ```js
 observe(
-  function // when element is intersecting
   element  // element to observe
+  function // when element is intersecting
   function // optional: when element isn't intersecting
   options  // optional: { rootMargin, threshold }
 );
 
 observeOnce(
-  function // when element is intersecting
   element  // element to observe
+  function // when element is intersecting
   options  // optional: { rootMargin, threshold }
 );
 ```
@@ -51,15 +50,15 @@ observeOnce(
 import { observe, observeOnce } from 'tiny-intersection-observer';
 
 observe(
+  document.querySelector('.element'),
   parallaxImages(), 
-  document.querySelector('.element'), 
   resetParallax(), // optional
   { rootMargin: '100px', threshold: 0.2 } // optional
 );
 
 observeOnce(
-  inViewAnimation(), 
   document.querySelector('.element'), 
+  inViewAnimation(), 
   { threshold: 1 } // optional
 );
 ```
