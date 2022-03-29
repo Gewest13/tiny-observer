@@ -1,8 +1,9 @@
 {
-  "name": "tiny-observer",
+  "name": "tiny-intersection-observer",
   "version": "1.0.0",
   "description": "A tiny library to observer elements",
   "license": "MIT",
+  "repository": "Gewest13/tiny-observer",
   "types": "dist/index.d.ts",
   "unpkg": "dist/index.umd.js",
   "keywords": [
