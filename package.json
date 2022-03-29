@@ -11,10 +11,12 @@
     "npm",
     "package",
     "observer",
+    "in view",
     "inview",
     "intersection",
-    "inviewport",
-    "vieport"
+    "intersection observer",
+    "in viewport",
+    "viewport"
   ],
   "scripts": {
     "build": "microbundle --name tiny-observer"
