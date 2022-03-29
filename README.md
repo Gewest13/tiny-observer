@@ -29,15 +29,15 @@ yarn:
 
 ```js
 observe(
-  element  // element to observe
-  function // when element is intersecting
-  function // optional: when element isn't intersecting
+  element,  // element to observe
+  function, // when element is intersecting
+  function, // optional: when element isn't intersecting
   options  // optional: { rootMargin, threshold }
 );
 
 observeOnce(
-  element  // element to observe
-  function // when element is intersecting
+  element,  // element to observe
+  function, // when element is intersecting
   options  // optional: { rootMargin, threshold }
 );
 ```
