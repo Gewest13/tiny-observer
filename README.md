@@ -33,13 +33,13 @@ observe(
   function // when element is intersecting
   element  // element to observe
   function // optional: when element isn't intersecting
-  options  // optional: { rootMargin, treshold }
+  options  // optional: { rootMargin, threshold }
 );
 
 observeOnce(
   function // when element is intersecting
   element  // element to observe
-  options  // optional: { rootMargin, treshold }
+  options  // optional: { rootMargin, threshold }
 );
 ```
 
@@ -48,19 +48,19 @@ observeOnce(
 ## Examples
 
 ```js
-import {observe, observeOnce} from 'tiny-intersection-observer';
+import { observe, observeOnce } from 'tiny-intersection-observer';
 
 observe(
   parallaxImages(), 
   document.querySelector('.element'), 
   resetParallax(), // optional
-  {rootMargin: '100px', threshold: 0.2} // optional
+  { rootMargin: '100px', threshold: 0.2 } // optional
 );
 
 observeOnce(
   inViewAnimation(), 
   document.querySelector('.element'), 
-  {threshold: 1} // optional
+  { threshold: 1 } // optional
 );
 ```
 
