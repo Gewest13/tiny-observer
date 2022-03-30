@@ -7,6 +7,6 @@ export const observe = (el: HTMLElement, inFn: () => void, outFn?: () => void, o
 
 export const observeOnce = (el: HTMLElement, fn: () => void, opts?: { rootMargin?: string, threshold?: number }) => {
   new IntersectionObserver(([entry], observer) => {
-    if (entry.isIntersecting) fn(); observer.unobserve(entry.target);
+    if (entry.isIntersecting) {fn(); observer.unobserve(entry.target);}
   }, { ...opts }).observe(el);
 };
